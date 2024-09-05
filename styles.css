@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Product Sans,Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #49b29b;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.serv{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+}
+
+.serv li{
+    padding: 55px;
+}
+
+/* Change color when scrolling */
+.scrolled {
+    background-color: #96bc2b;
+}
+
+/* Styling sections for visibility */
+section {
+    padding: 100px 20px;
+    margin-top: 80px;
+    height: 100vh;
+    text-align: center;
+    background-color: #bd73d8;
+    border-bottom: 1px solid #ddd;
+}
+
+#about { background-color: #42afd0;         
+}
+
+#about p{
+    color: white;
+    margin-top: 15px;
+    
+}
+#services { background-color: #811156; }
+#contact { background-color: #12b4b7; }
